@@ -91,10 +91,14 @@ if has("gui_running")
   "set guioptions-=lrb
 endif
 
-"设置TAB用2个空格
-"set tabstop=2
-"set shiftwidth=2
-"set softtabstop=2
+"设置TAB用4个空格
+"tabstop     一个tab键所占的列数，linux 内核代码建议每个tab占用8列
+"shiftwidth  reindent 操作（<<和>>）时缩进的列数（这里的一列相当于一个空格）
+"softtabstop 敲入tab键时实际占有的列数。
+"expandtab   输入tab时自动将其转化为空格
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 "set expandtab
 
 "设置输入时显示匹配括号
@@ -120,7 +124,8 @@ set scrolloff=2
 "总是显示状态行
 set laststatus=2
 "状态行显示内容
-set statusline=%f\ [TYPE=%Y]\ [FORMAT=%{&ff}]\ [%{&fileencoding}]%h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline=%f\ [TYPE=%Y]\ [FORMAT=%{&ff}]\ [%{&fileencoding}]\ [POS=%l,%v][%p%%]
+
 
 """"""""""""""""""""""""""""""
 " Tag list (ctags)
@@ -176,7 +181,9 @@ set sessionoptions+=resize
 
 "设置字体
 "guifont=YaHei Consolas Hybrid 14
-set guifont=YaHei\ Consolas\ Hybrid\ 14
+"guifont=DejaVu Sans Mono 14
+"set guifont=YaHei\ Consolas\ Hybrid\ 14
+set guifont=DejaVu\ Sans\ Mono\ 14
 
 highlight ColorColumn guibg=Black
 "highlight ColorColumn ctermbg=7
