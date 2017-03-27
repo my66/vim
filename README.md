@@ -7,21 +7,3 @@ http://www.vim.org/scripts/script.php?script_id=42
 taglist.vim : Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc) 
 
 http://www.vim.org/scripts/script.php?script_id=273
-
-测试远程更新
-
-
-asdfasdfasdfsadfsdf
-
-
-
-11111111111111111111111111111111111111
-
-22222222222222222222222222222222222222
-
-44444444444444444444444444444444
-
-d3333333333333333333333333333333333333
-
-
-55555555555555555555555555555555
